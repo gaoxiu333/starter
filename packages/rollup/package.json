@@ -2,10 +2,11 @@
   "name": "rollup",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "build":"rollup -c rollup.config.mjs",
-    "build:ts": "rollup -c rollup.config.ts --configPlugin typescript --bundleConfigAsCjs",
+    "build":"rollup -c rollup.config.js",
+    "build:ts": "rollup -c rollup.config.base.ts --configPlugin typescript --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
