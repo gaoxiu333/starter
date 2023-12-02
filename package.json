@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "simple-git-hooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
