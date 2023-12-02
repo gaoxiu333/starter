@@ -1,0 +1,14 @@
+# 阻止编辑器在父目录中查找
+root = true
+
+[*]
+# 不会被 Prettier 转化
+charset = utf-8
+insert_final_newline = true # 新行上一行添加换行符
+# trim_trailing_whitespace = true # 行尾空格
+
+# 以下会被 Prettier 转化，并且覆盖
+end_of_line = lf # 使用 `\n` 换行 CRLF 表示使用`\r\n`进行换行
+indent_style = space  # 使用空格表示缩进
+indent_size = 2       # 缩进为两个空格
+max_line_length = 80  # 一行最大字符数
