@@ -4,9 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "nocheck": "--no-verify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "simple-git-hooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "gaoxiu",
+  "license": "ISC",
+  "devDependencies": {
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0",
+    "simple-git-hooks": "^2.9.0"
+  }
 }
