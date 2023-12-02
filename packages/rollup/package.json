@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build":"rollup -c rollup.config.js",
+    "build": "rollup -c rollup.config.js",
     "build:ts": "rollup -c rollup.config.base.ts --configPlugin typescript --bundleConfigAsCjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
     "rollup": "^4.6.1",
     "tslib": "^2.6.2",

@@ -1,4 +1,6 @@
 import typescript from "@rollup/plugin-typescript";
+// import type { InternalModuleFormat } from "rollup";
+// InternalModuleFormat - rollup 打包的类型
 
 const config: import("rollup").RollupOptions = {
   input: "src/index.ts",
@@ -6,11 +8,11 @@ const config: import("rollup").RollupOptions = {
     file: "dist/index.js",
     format: "cjs",
   },
-  plugins:[
+  plugins: [
     typescript({
       tsconfig: "tsconfig.json",
-      sourceMap: false
-    })
-  ]
+      sourceMap: false,
+    }),
+  ],
 };
 export default config;
